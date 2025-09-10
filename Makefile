@@ -25,8 +25,11 @@ build: clean requirements
 	# Use PEP 517 build (reads pyproject.toml). produces sdist and wheel in dist/
 	./.venv/bin/python -m build --sdist --wheel
 
-pypi: build
+install-twine:
+	./.venv/bin/pip install twine
+
+pypi: build install-twine
 	./.venv/bin/python -m twine upload dist/* --config-file ~/.pypirc
 
-test-pypi: build
+test-pypi: build install-twine
 	./.venv/bin/python -m twine upload --verbose --repository testpypi dist/* --config-file ~/.pypirc

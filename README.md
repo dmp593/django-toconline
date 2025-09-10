@@ -219,4 +219,4 @@ This project is licensed under the MIT License (see `LICENSE`).
 
 If you find this project helpful, you can support its development via Buy Me a Coffee. Add your own link or replace the placeholder below:
 
-[Buy me a coffee](buymeacoffee.com/dmp593)
+[Buy me a coffee](https://buymeacoffee.com/dmp593)

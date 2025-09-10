@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-toconline"
-version = "1.0.0"
+version = "1.0.1"
 description = "Django integration for the TOC Online API"
 authors = ["Daniel Pinto <dmp593@gmail.com>"]
 license = "MIT"
