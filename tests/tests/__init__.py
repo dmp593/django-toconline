@@ -1,3 +1,4 @@
 from .test_customers import *
 from .test_products import *
 from .test_sales import *
+from .test_tokens import *

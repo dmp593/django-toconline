@@ -200,13 +200,6 @@ Run the test suite (project includes a Makefile target `test`):
 make test
 ```
 
-## Development notes
-
-- The client is intentionally thin — it mirrors the TOC Online API endpoints and uses `requests` under the hood.
-- The public API docs (OpenAPI/Swagger and Postman) are the authoritative source for field names, allowed values and example payloads. Use them when composing create/update payloads.
-
-Official docs: [TOC Online API Docs](https://api-docs.toconline.pt/) (includes a Swagger/OpenAPI viewer and a Postman collection)
-
 ## Contributing
 
 Contributions welcome. Please open issues and pull requests. Keep changes small and include tests for new behavior.

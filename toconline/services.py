@@ -426,7 +426,11 @@ toconline = TocOnline(
     credentials=TocOnlineCredentials(
         client_id=settings.TOCONLINE_OAUTH_CLIENT_ID,
         client_secret=settings.TOCONLINE_OAUTH_CLIENT_SECRET,
-        redirect_uri=settings.TOCONLINE_OAUTH_REDIRECT_URI,
+        redirect_uri=getattr(
+            settings,
+            'TOCONLINE_OAUTH_REDIRECT_URI',
+            'https://oauth.pstmn.io/v1/callback'
+        ),
     ),
     timeout=getattr(settings, 'TOCONLINE_TIMEOUT', 10)  # optional
 )
