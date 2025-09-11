@@ -18,12 +18,6 @@ This package was written with simplicity and resilience in mind. The goal is not
 
 This design favors durability and small surface area over rich client-side models.
 
-## Quick checklist
-
-- [x] Inspect repository code to identify usage and configuration points
-- [x] Reviewed public API docs at [TOC Online API Docs](https://api-docs.toconline.pt/)
-- [x] Wrote this README covering install, config, usage, testing and links
-
 ## Installation
 
 Install from PyPI (when published) or install in editable mode for development:
@@ -157,7 +151,7 @@ services.toconline.retrieve('new-resource', 'resource-id')
 
 Notes:
 
-- Forward-compatibility means you can call new endpoints immediately, but the accepted payload and returned schema are defined by the TOC Online API — consult the official docs for details.
+- Forward-compatibility means you can call new endpoints immediately, but the accepted payload and returned schema are defined by the TOC Online API — *please refer the official docs for details*.
 - Because the client returns API data directly, consumer code should handle new fields or schema changes gracefully.
 
 ## API Resources
